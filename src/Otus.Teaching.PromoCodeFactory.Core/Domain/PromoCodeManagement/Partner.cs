@@ -1,17 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
-namespace Otus.Teaching.PromoCodeFactory.Core.Domain.PromoCodeManagement
-{
-    public class Partner
-        : BaseEntity
-    {
-        public string Name { get; set; }
+namespace Otus.Teaching.PromoCodeFactory.Core.Domain.PromoCodeManagement;
 
-        public int NumberIssuedPromoCodes  { get; set; }
+public class Partner
+    : BaseEntity {
+    public string Name { get; set; }
 
-        public bool IsActive { get; set; }
+    public int NumberIssuedPromoCodes { get; set; }
 
-        public virtual ICollection<PartnerPromoCodeLimit> PartnerLimits { get; set; }
-    }
+    public bool IsActive { get; set; }
+
+    public virtual ICollection<PartnerPromoCodeLimit> PartnerLimits { get; set; }
 }

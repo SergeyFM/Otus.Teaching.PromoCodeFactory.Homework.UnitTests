@@ -1,19 +1,17 @@
 ﻿using System;
 
-namespace Otus.Teaching.PromoCodeFactory.WebHost.Models
-{
-    public class PartnerPromoCodeLimitResponse
-    {
-        public Guid Id { get; set; }
+namespace Otus.Teaching.PromoCodeFactory.WebHost.Models;
 
-        public Guid PartnerId { get; set; }
+public class PartnerPromoCodeLimitResponse {
+    public Guid Id { get; set; }
 
-        public string CreateDate { get; set; }
+    public Guid PartnerId { get; set; }
 
-        public string CancelDate { get; set; }
+    public string CreateDate { get; set; }
 
-        public string EndDate { get; set; }
+    public string CancelDate { get; set; }
 
-        public int Limit { get; set; }
-    }
+    public string EndDate { get; set; }
+
+    public int Limit { get; set; }
 }

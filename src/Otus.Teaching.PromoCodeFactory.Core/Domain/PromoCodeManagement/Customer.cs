@@ -1,18 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
-namespace Otus.Teaching.PromoCodeFactory.Core.Domain.PromoCodeManagement
-{
-    public class Customer
-        :BaseEntity
-    {
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
+namespace Otus.Teaching.PromoCodeFactory.Core.Domain.PromoCodeManagement;
 
-        public string FullName => $"{FirstName} {LastName}";
+public class Customer
+    : BaseEntity {
+    public string FirstName { get; set; }
+    public string LastName { get; set; }
 
-        public string Email { get; set; }
+    public string FullName => $"{FirstName} {LastName}";
 
-        public virtual ICollection<CustomerPreference> Preferences { get; set; }
-    }
+    public string Email { get; set; }
+
+    public virtual ICollection<CustomerPreference> Preferences { get; set; }
 }

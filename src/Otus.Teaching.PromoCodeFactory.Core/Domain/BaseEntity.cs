@@ -1,9 +1,7 @@
 ﻿using System;
 
-namespace Otus.Teaching.PromoCodeFactory.Core.Domain
-{
-    public class BaseEntity
-    {
-        public Guid Id { get; set; }
-    }
+namespace Otus.Teaching.PromoCodeFactory.Core.Domain;
+
+public class BaseEntity {
+    public Guid Id { get; set; }
 }
